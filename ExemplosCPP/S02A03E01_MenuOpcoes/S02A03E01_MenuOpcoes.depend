@@ -1,4 +1,16 @@
 # depslib dependency file v1.0
-1562541825 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\s02a03e01_menuopcoes\main.cpp
+1562542169 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\s02a03e01_menuopcoes\main.cpp
 	<iostream>
+
+1562543275 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\s02a03e01_menuopcoes\src\dataframe.cpp
+	"DataFrame.h"
+	<iostream>
+
+1562546025 c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\s02a03e01_menuopcoes\include\dataframe.h
+	<iostream>
+
+1562546025 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\s02a03e01_menuopcoes\src\funcaoagregacao_soma.cpp
+	"FuncaoAgregacao_SOMA.h"
+
+1562545817 c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\s02a03e01_menuopcoes\include\funcaoagregacao_soma.h
 

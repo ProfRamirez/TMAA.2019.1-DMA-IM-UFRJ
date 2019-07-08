@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1562546287 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\ed04_2019.1\src\dataframe.cpp
+	"DataFrame.h"
+	<iostream>
+
+1562546824 c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\ed04_2019.1\include\dataframe.h
+	"FuncaoAgregacao_SOMA.h"
+	<iostream>
+
+1562546351 c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\ed04_2019.1\include\funcaoagregacao_soma.h
+
+1562546351 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\ed04_2019.1\src\funcaoagregacao_soma.cpp
+	"FuncaoAgregacao_SOMA.h"
+
+1562547333 source:c:\users\mr2\documents\github\tmaa.2019.1-dma-im-ufrj\exemploscpp\ed04_2019.1\main.cpp
+	<iostream>
+	"DataFrame.h"
+	"FuncaoAgregacao_SOMA.h"
+	<vector>
+

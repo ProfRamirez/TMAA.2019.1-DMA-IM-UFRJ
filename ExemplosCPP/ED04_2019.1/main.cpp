@@ -13,33 +13,36 @@
 #-----------------------------------------------------------
 */
 #include <iostream>
+#include "DataFrame.h"
+#include "FuncaoAgregacao_SOMA.h"
+
+#include <vector>
 
 using namespace std;
 
-class FuncaoDeAgregacao
+void Soma( vector<int> v, FuncaoAgregacao_SOMA & sum)
 {
-    operator (){};
-};
-
-class DataFrame
-{
-public:
-    DataFrame() {};
-    void read_csv(string) {};
-    DataFrame groupby(string) {};
-    DataFrame agg( string, Funcao_de_agregacao ) {};
-    void print(void) {};
-};
+    for( auto elemento : v)
+    {
+        sum(elemento);
+    }
+}
 
 int main()
 {
     DataFrame eleitores, eleitores_por_UF;
+    vector<int> v = { 1,2,3,4,5,6};
+    FuncaoAgregacao_SOMA sum;
 
-    cout << "*** TMAA.2019.1: Exploração da Base de Eleitores 2018 - MR2(C)DMA-IM/UFRJ ***\n" << endl;
+    cout << "TMAA.2019.1 (ED04): Exploração da Base de Eleitores 2018 " << endl;
+    cout << "(c) Prof. Milton R. Ramirez - (milton@matematica.ufrj.br) : DMA-IM/UFRJ\n" << endl;
 
-    eleitores.read_cvs();
-    eleitores_por_UF = eleitores.groupby('UF').agg( 'QNT_ELEITORES', soma_agg_function );
+    eleitores.read_csv("teste");
+    eleitores_por_UF = eleitores.groupby("UF").agg("QNT_ELEITORES", sum );
     eleitores_por_UF.print();
+
+    Soma( v, sum );
+    cout << sum.get_soma_resultado();
 
     return 0;
 }

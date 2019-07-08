@@ -7,21 +7,24 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/ED04_2019.1" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/ED04_2019" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++11" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/ED04_2019.1" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/ED04_2019" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +35,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/DataFrame.h" />
+		<Unit filename="include/FuncaoAgregacao_SOMA.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/DataFrame.cpp" />
+		<Unit filename="src/FuncaoAgregacao_SOMA.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
