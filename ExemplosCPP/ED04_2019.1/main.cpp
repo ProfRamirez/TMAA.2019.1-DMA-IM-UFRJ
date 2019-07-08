@@ -20,18 +20,9 @@
 
 using namespace std;
 
-void Soma( vector<int> v, FuncaoAgregacao_SOMA & sum)
-{
-    for( auto elemento : v)
-    {
-        sum(elemento);
-    }
-}
-
 int main()
 {
     DataFrame eleitores, eleitores_por_UF;
-    vector<int> v = { 1,2,3,4,5,6};
     FuncaoAgregacao_SOMA sum;
 
     cout << "TMAA.2019.1 (ED04): Exploração da Base de Eleitores 2018 " << endl;
@@ -40,9 +31,6 @@ int main()
     eleitores.read_csv("teste");
     eleitores_por_UF = eleitores.groupby("UF").agg("QNT_ELEITORES", sum );
     eleitores_por_UF.print();
-
-    Soma( v, sum );
-    cout << sum.get_soma_resultado();
 
     return 0;
 }
