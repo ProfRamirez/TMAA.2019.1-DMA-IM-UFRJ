@@ -1,15 +1,15 @@
 /*
 #-----------------------------------------------------------
 # UFRJ - Universidade Federal do Rio de Janeiro
-# IM   - Instituto de Matem·tica
-# DMA  - Departamento de Matem·tica Aplicada
+# IM   - Instituto de Matem√°tica
+# DMA  - Departamento de Matem√°tica Aplicada
 #
-#        TMAA - Top. Mat. Aplicada A - ProgramaÁ„o I
+#        TMAA - Top. Mat. Aplicada A - Programa√ß√£o I
 #
-# ED04 - Programa BASE: ExploraÁ„o da Base de Eleitores 2018
+# ED04 - Programa BASE: Explora√ß√£o da Base de Eleitores 2018
 #
 # Autor: Prof. Milton R. Ramirez (milton@labma.ufrj.br)
-# CriaÁ„o: 07 de julho de 2019
+# Cria√ß√£o: 07 de julho de 2019
 #-----------------------------------------------------------
 */
 #include <iostream>
@@ -25,12 +25,12 @@ int main()
     DataFrame eleitores, eleitores_por_UF;
     FuncaoAgregacao_SOMA sum;
 
-    cout << "TMAA.2019.1 (ED04): ExploraÁ„o da Base de Eleitores 2018 " << endl;
+    cout << "TMAA.2019.1 (ED04): Explora√ß√£o da Base de Eleitores 2018 " << endl;
     cout << "(c) Prof. Milton R. Ramirez - (milton@matematica.ufrj.br) : DMA-IM/UFRJ\n" << endl;
 
-    eleitores.read_csv("teste");
+    eleitores.read_csv("perfil_eleitorado_2018.csv");
     eleitores_por_UF = eleitores.groupby("UF").agg("QNT_ELEITORES", sum );
-    eleitores_por_UF.print();
+    eleitores_por_UF.Grafico();
 
     return 0;
 }
