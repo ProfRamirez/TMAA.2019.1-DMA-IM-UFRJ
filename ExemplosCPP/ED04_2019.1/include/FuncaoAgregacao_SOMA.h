@@ -1,3 +1,17 @@
+/*
+#-----------------------------------------------------------
+# UFRJ - Universidade Federal do Rio de Janeiro
+# IM   - Instituto de Matemática
+# DMA  - Departamento de Matemática Aplicada
+#
+#        TMAA - Top. Mat. Aplicada A - Programação I
+#
+# ED04 - Modulo FuncaoAgregacao: Exploração da Base de Eleitores 2018
+#
+# Autor: Prof. Milton R. Ramirez (milton@labma.ufrj.br)
+# Criação: 07 de julho de 2019
+#-----------------------------------------------------------
+*/
 #ifndef FUNCAOAGREGACAO_SOMA_H
 #define FUNCAOAGREGACAO_SOMA_H
 
