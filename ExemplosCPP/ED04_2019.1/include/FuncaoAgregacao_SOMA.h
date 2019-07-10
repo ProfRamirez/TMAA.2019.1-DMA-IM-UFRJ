@@ -6,17 +6,20 @@
 #
 #        TMAA - Top. Mat. Aplicada A - Programação I
 #
-# ED04 - Modulo FuncaoAgregacao: Exploração da Base de Eleitores 2018
+# ED04 - Perfil do Eleitorado 2018
+#        Head do Modulo "Funcao de Agregacao"
 #
 # Autor: Prof. Milton R. Ramirez (milton@labma.ufrj.br)
 # Criação: 07 de julho de 2019
+#
+# Data de entrega: 14 de julho de 2018
 #-----------------------------------------------------------
 */
 #ifndef FUNCAOAGREGACAO_SOMA_H
 #define FUNCAOAGREGACAO_SOMA_H
 
 
-class FuncaoAgregacao_SOMA
+class FuncaoAgregacao_SOMA // Functor para a função de agregação equivalente ao SUM
 {
     public:
         FuncaoAgregacao_SOMA() { soma_resultado = 0; };

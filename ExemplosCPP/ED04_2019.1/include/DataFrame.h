@@ -6,10 +6,13 @@
 #
 #        TMAA - Top. Mat. Aplicada A - Programação I
 #
-# ED04 - Modulo DataFrame: Exploração da Base de Eleitores 2018
+# ED04 - Perfil do Eleitorado 2018
+#        Head do Modulo DataFrame
 #
 # Autor: Prof. Milton R. Ramirez (milton@labma.ufrj.br)
 # Criação: 07 de julho de 2019
+#
+# Data de entrega: 14 de julho de 2018
 #-----------------------------------------------------------
 */
 
@@ -26,10 +29,10 @@ class DataFrame
         DataFrame();
         virtual ~DataFrame();
 
-        void read_csv(string) {};
-        DataFrame groupby(string) { return *this; };
-        DataFrame agg( string, FuncaoAgregacao_SOMA ) { return *this; };
-        void Grafico(void) {};
+        void read_csv(string);
+        DataFrame groupby(string);
+        DataFrame agg(string, FuncaoAgregacao );
+        void Grafico(void);
 
     protected:
     private:

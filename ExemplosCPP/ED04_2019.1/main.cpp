@@ -6,10 +6,13 @@
 #
 #        TMAA - Top. Mat. Aplicada A - Programação I
 #
-# ED04 - Programa BASE: Exploração da Base de Eleitores 2018
+# ED04 - Perfil do Eleitorado 2018
+#        Módulo Principal
 #
 # Autor: Prof. Milton R. Ramirez (milton@labma.ufrj.br)
 # Criação: 07 de julho de 2019
+#
+# Data de entrega: 14 de julho de 2018
 #-----------------------------------------------------------
 */
 #include <iostream>
