@@ -36,9 +36,19 @@ void DataFrame::read_csv(string)
     // com nome das colunas dada na 1a linha do arquivo
 }
 
-DataFrame DataFrame::groupby(string)
+void DataFrame::groupby(string campo)
 {
-    // Gera um novo data frame
+    // Ordenacao das linhas do DataFrame, segundo o "campo"
+    // para aplicacao de funcao de agregacao
 }
-DataFrame DataFrame::agg(string, FuncaoAgregacao );
-void DataFrame::Grafico(void);
+
+DataFrame DataFrame::agg(string campo, FuncaoAgregacao_SOMA fg )
+{
+    // Gera um novo DataFrame com as categorias apuradas pelo "groupby" seguida do resultado
+    // da aplicacao da Funcao de Agregacao ao "campo" das linhas do grupo
+}
+
+void DataFrame::Grafico(void)
+{
+    //Gera um grafico de barras com os dado da DataFrame
+}

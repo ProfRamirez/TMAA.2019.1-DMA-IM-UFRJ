@@ -30,8 +30,8 @@ class DataFrame
         virtual ~DataFrame();
 
         void read_csv(string);
-        DataFrame groupby(string);
-        DataFrame agg(string, FuncaoAgregacao );
+        void groupby(string);
+        DataFrame agg(string, FuncaoAgregacao_SOMA );
         void Grafico(void);
 
     protected:
